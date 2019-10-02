@@ -9,7 +9,7 @@
      <link rel="stylesheet" href="style.css">
  </head>
  <body>
-     <main id="container">
+     <main class="dayBG" id="container">
          <input id="button" class="day" type="button" value="">
      </main>
  </body>
@@ -19,9 +19,13 @@
 
         // the function for handle the button clicking :
     const onButtonClick = ()=> {
-        container.style.justifyContent = "flex-end"
+        container.classList.toggle("nightBG")
+        
+        btn.classList.toggle("night")
     }
 
+
+        // on clicking the button:
     btn.addEventListener("click", () => {
         onButtonClick()
     })
