@@ -8,7 +8,7 @@
      <script src="app.js"></script>
      <link rel="stylesheet" href="style.css">
  </head>
- <body>
+ <body class="dayBody" id="body">
      <main class="dayBG" id="container">
          <input id="button" class="day" type="button" value="">
      </main>
@@ -16,9 +16,11 @@
  <script>
     const btn = document.getElementById("button");
     const container = document.getElementById("container");
+    const body = document.getElementById("body");
 
         // the function for handle the button clicking :
     const onButtonClick = ()=> {
+        body.classList.toggle("nightBody")
         container.classList.toggle("nightBG")
         
         btn.classList.toggle("night")
