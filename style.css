@@ -6,6 +6,7 @@
      align-items: center;
 
      background-color: rgb(24, 24, 148);
+     transition: 1000ms all ease;
  }
  .nightBody {
     height: 100vh;
@@ -18,25 +19,25 @@
 }
  .dayBG {
      width: 90px;
-     padding: 1px;
      display: flex;
-     justify-content: flex-start;
      align-items: center;
+     padding: 1px ;
 
      border: 1px rgb(209, 206, 206) solid;
      border-radius: 20px;
  }
  .nightBG {
     width: 90px;
-    padding: 1px;
     display: flex;
-    justify-content: flex-end;
     align-items: center;
+    padding: 1px;
 
     border: 1px rgb(209, 206, 206) solid;
     border-radius: 20px;
 }
  .day {
+     position: relative;
+     left: 0px;
      width: 40px;
      height: 40px;
      border: none;
@@ -45,8 +46,11 @@
 
      /*background-color: rgb(7, 7, 90);*/
      background-color: rgba(255, 255, 0, 0.76);
+     transition: left 500ms ease-in-out;
  }
  .night {
+    position: relative;
+    left: 50px;
     width: 40px;
     height: 40px;
     border: none;
